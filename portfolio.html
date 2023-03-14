@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">folio <b>.</b></div>
+                <ul class="navItems">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/omgandhi1611/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/omgandhi1611/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/OmGandhi16" target="_blank"><i class="fab fa-github"></i></a>
+                    <!-- <span class="toggleSwitch">
+                        <i class="fa fa-sun"></i>
+                        <i class="fa fa-moon"></i>
+                    </span> -->
+                </div>
+        </nav>
+        <div class="wrapper">
+            <div class="cols cols0">
+                <span class="topline">Hello</span>
+                <h1>I'm <span class="multiText"></span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolor. Est ipsa quibusdam laborum deleniti quas nemo error dolorem reiciendis culpa quae impedit, provident odio asperiores mollitia! Quas, hic aliquam.</p>
+                <div class="btns">
+                    <button onclick="download()">Download CV</button>
+                    <button>Hire Me</button>
+                </div>
+            </div>
+            <div class="cols cols1">
+                <div class="imgbox">
+                    <img src="DSC_0739.JPG" class="portfolio">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect = new Typed(".multiText", {
+            strings : ["Game Developer", "Designer", "Web Developer"],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 80,
+            backDelay : 1500
+        })
+        function download()
+        {
+            window.open('Om_Gandhi_Resume_20-01-2023-12-29-38.pdf')
+        }
+        // const toggleSwitch = document.querySelector('body');
+        // toggleSwitch.addEventListener('click', function(){
+        //     document.body.classList.toggle('switch');
+        // })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+      function addDarkmodeWidget() {
+        new Darkmode().showWidget();
+      }
+      window.addEventListener('load', addDarkmodeWidget);
+    </script>
+</body>
+</html>
